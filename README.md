@@ -18,6 +18,8 @@ Learn something and study it with mind forever.
 
 ### DevLibsBOOST
 
+### DevLibsLog4CXX
+
 
 ## DevTools: DevApp with different tools
 
