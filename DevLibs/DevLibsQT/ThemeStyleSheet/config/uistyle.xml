@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stylescheme id="0" name="样式集合">
+    <style name="ss_main_form">
+    /*
+    QWidget[StyleID = "metro"] {
+        background-color: transparent; 
+        background: transparent;
+        border: 2px solid gray;
+        border-radius: 5px;
+    }  
+    QWidget[StyleID = "new"] {
+        background-color: transparent; 
+        background: rgb(255, 0, 0);
+        border: 2px solid gray;
+        
+    }  
+    */
+    
+    
+    QWidget[StyleID = "metro"] {
+        background-color: rgb(128,128,128); 
+        border-style: outset; border-width: 2px;border-color: rgb(36,40,52);border-radius: 5px;
+    }
+    QWidget[StyleID = "new"] {
+        background-color: rgb(192, 192, 192);
+        border-style: outset; border-width: 2px;border-color: rgb(36,40,52);border-radius: 10px;
+    }
+    </style>
+    <!-- border-radius: 10px;-->
+    <style name="ss_line_edit">
+    QLineEdit[StyleID = "metro"] {
+        color: rgb(255,255,214); 
+        background-color: rgb(128,128,128); 
+        border:none;
+        selection-color: red; 
+        selection-background-color: blue;
+    }
+    QLineEdit[StyleID = "new"] {
+        color: rgb(201,208,214); 
+        background-color: white; 
+        border:none;
+        selection-color: red; 
+        selection-background-color: blue;
+    }
+    </style>
+    <style name="ss_groupbox">
+    QGroupBox {
+        background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #E0E0E0, stop: 1 #FFFFFF);
+        border: 2px solid gray;
+        border-radius: 5px;
+        margin-top: 1ex; /* leave space at the top for the title rgb(37, 41, 53)*/
+    }
+
+    QGroupBox::title {
+        subcontrol-origin: margin;
+        subcontrol-position: top center; /* position at the top center */
+        padding: 0 3px;
+        background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #FFOECE, stop: 1 #FFFFFF);
+    }
+    
+    QGroupBox::indicator {
+        width: 13px;
+        height: 13px;
+    }
+
+    QGroupBox::indicator:unchecked {
+        image: url(:/images/checkbox_unchecked.png);
+    }/* proceed with styling just like QCheckBox */    
+    </style>
+    <style name="ss_tree_view">
+    QTreeView[StyleID = "metro"] {
+        show-decoration-selected: 1;
+        color: rgb(201,208,214); 
+        background-color: green; 
+        border:none;
+    }
+    QTreeView::item[StyleID = "metro"] {
+        color: rgb(201,208,214); 
+        border:none;
+    }
+    
+    QTreeView[StyleID = "new"] {
+        show-decoration-selected: 1;
+        color: rgb(201,208,214); 
+        background-color: rgb(37,41,53); 
+        border:none;
+    }
+    QTreeView::item[StyleID = "new"] {
+        color: rgb(201,208,255); 
+        border:none;
+    }
+
+    QTreeView::item:hover {
+        background: rgb(40,49,72); 
+        border:none;
+    }
+
+    QTreeView::item:selected {
+        background: rgb(43,56,90);  
+        border:none;
+    }
+
+    QTreeView::item:selected:active{
+        background: rgb(43,56,90); 
+        border:none;
+    }
+
+    QTreeView::item:selected:!active {
+        background: rgb(43,56,85); 
+        border:none;
+    }
+    </style>
+</stylescheme>
+
